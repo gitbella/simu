@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>beijing he ju investment--Service</title>
+    <meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=5;IE=6;IE=7;IE=8;IE=9;IE=10;IE=11"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../r/cms/heju/heju/css/reset_heju_en.css">
+    <link rel="stylesheet" href="../r/cms/heju/heju/css/x_style_heju_en.css">
+	<style type="text/css">html,body{margin:0;padding:0;}    
+	    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}    
+	    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+</head>
+<body>
+
+<!--header-->
+<link rel="shortcut icon" href="../r/cms/heju/heju/images/4566.ico"/>
+<div id="header">
+    <div class="header_con">
+       <a href="../goDisclaimer.jspx.html"><img src="../r/cms/heju/heju/images/x_logo.png" class="x_logo" /></a>
+        <div class="zyqh"><a style="color:black;"  href="../goDisclaimer.jspx.html"><span class="sp1">中文</span></a><a style="color:black;"  href="home.html"><span>English</span></a></div>
+    </div>
+</div>
+
+<!--nav-->
+<div id="nav">
+    <div class="nav_con">
+        <ul>
+							<li><a href="home.html">Home</a><div class="libo"></div></li>
+							<li><a href="CorporateProfile/index.html">About Us</a><div class="libo"></div></li>
+							<li class="checked"><a href="businessService.html">Service</a><div class="libo"></div></li>
+        </ul>
+    </div>
+</div>
+<!--banner-->
+<div id="banner"  
+            style="width:100%;height:350px;background:url('../u/cms/heju/201605/15173140drsd.jpg'); background-repeat: no-repeat; background-position: top center;background-size: cover;"
+ 		>
+	
+</div>
+
+
+<!--content-->
+<div id="content_ju">
+	<div class="con_left">
+		<ul>
+      
+						<li class="li_first"><a href="businessService.html">Service introduction</a></li>
+						<li><a href="faqs/index.html">FAQs</a></li>
+						<li class="li_first checked"><a href="Contactus.html">Contact us</a></li>
+			
+		</ul>
+	</div>
+	<div class="con_right">
+		<div class="con_right_bao con_right_bao_sys" style="border-bottom: none;">
+	<div class="connect_li connect_tel"><span>Weekdays Tel: 4006182112 </span> <span>eekends/Holidays Tel: +86 18701529904</span> <span>Contact number: 010-88320700</span></div>
+	<div class="connect_li connect_zz"><span>FAX: 010-88320790 </span></div>
+	<div class="connect_li connect_mail"><span>E-mail: service@hejufund.com</span></div>
+	<div class="connect_li connect_mail">Address: Rm.902, Tower A, Building 17th , H.I.P Plaza, Beizan North Street, Xicheng District, Beijing, P.R.China (100013)</div>
+</div>
+<p>&nbsp;</p>
+
+		<div id="wrap" class="my-map">
+			 <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+    </div>
+	</div>
+</div>
+
+
+
+
+
+  <style>#map { margin: 0; font: 13px/1.5 "Microsoft YaHei", "Helvetica Neue", "Sans-Serif"; min-height: 960px; min-width: 600px; }
+        .my-map { margin: 0 auto; width: 700px; height: 450px; }
+        .my-map .icon { background: url("http://lbs.amap.com/console/public/show/marker.png") no-repeat; }
+        .my-map .icon-cir { height: 31px; width: 28px; }
+        .my-map .icon-cir-red { background-position: -11px -5px; }
+        .amap-container{height: 100%;}
+    </style> 
+    <div >
+    <script src="https://webapi.amap.com/maps?v=1.3&amp;key=8325164e247e15eea68b59e89200988b"></script>
+    <script>
+    !function(){
+        var infoWindow, map, level = 18,
+            center = {lng: 116.410677, lat: 39.966423},
+            features = [{type: "Marker", name: "详细地址：", desc: "环球贸易中心E座12层", color: "red", icon: "cir", offset: {x: -9, y: -31}, lnglat: {lng: 116.410599, lat: 39.966343}}];
+ 
+        function loadFeatures(){
+            for(var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++){
+                data = features[i];
+                switch(data.type){
+                    case "Marker":
+                        feature = new AMap.Marker({ map: map, position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+                            zIndex: 3, extData: data, offset: new AMap.Pixel(data.offset.x, data.offset.y), title: data.name,
+                            content: '<div class="icon icon-' + data.icon + ' icon-'+ data.icon +'-' + data.color +'"></div>' });
+                        break;
+                    case "Polyline":
+                        for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polyline({ map: map, path: path, extData: data, zIndex: 2,
+                            strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity });
+                        break;
+                    case "Polygon":
+                        for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polygon({ map: map, path: path, extData: data, zIndex: 1,
+                            strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity,
+                            fillColor: data.fillColor, fillOpacity: data.fillOpacity });
+                        break;
+                    default: feature = null;
+                }
+                if(feature){ AMap.event.addListener(feature, "click", mapFeatureClick); }
+            }
+        }
+ 
+        function mapFeatureClick(e){
+            if(!infoWindow){ infoWindow = new AMap.InfoWindow({autoMove: true}); }
+            var extData = e.target.getExtData();
+            infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+            infoWindow.open(map, e.lnglat);
+        }
+ 
+        map = new AMap.Map("dituContent", {center: new AMap.LngLat(center.lng, center.lat), level: level});
+         
+        loadFeatures();
+ 
+        map.on('complete', function(){
+            map.plugin(["AMap.ToolBar", "AMap.OverView", "AMap.Scale"], function(){
+                map.addControl(new AMap.ToolBar);
+            map.addControl(new AMap.OverView({isOpen: true}));
+            map.addControl(new AMap.Scale);
+            });
+        })
+         
+    }();
+    </script>
+    </div>
+
+
+<!--footer-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<div id="footer" class="footer_sys">
+    <div class="footer_con" style="width:1140px;">
+        <div class="fo_left">
+            <ul>
+                <li><a style="color: #fff;font-size: 12px;" href="../goDisclaimerEn.jspx.html" target="_blank" >Disclaimer</a><span>|</span></li>
+                <li><a style="color: #fff;font-size: 12px;" href="CorporateProfile/index.html" target="_blank" >HE JU Culture</a><span>|</span></li>
+                <li><a style="color: #fff;font-size: 12px;" href="CorporateAwards/index.html" target="_blank" >HE JU Awards</a><span>|</span></li>
+                <li><a style="color: #fff;font-size: 12px;" href="CorporateHistory/index.html" target="_blank" >HE JU History</a></li>
+            </ul>
+                 <p>Copyright©&2009-2017BEIJING HE JU INVESTMENT&nbspAll&nbsp Rights&nbspReserved&nbspBEIJING HE JU INVESTMENT WEBSITE</p>
+                <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202007308" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;font-size: 12px;color:#fff;"><img src="../r/cms/heju/heju/images/beianicon.png" style="float:left;"/>京公网安备 11010202007308</a>&nbsp&nbsp|&nbsp&nbspICP 14023300  | Copyright reserved  ©   2009  BEIJING HE JU INVESTMENT</p>
+            </div>
+            <div class="fo_right" style="width:500px;display: inline;">
+                <div class="fo_img" style="margin-top:20px;">
+                    <img src="../r/cms/heju/heju/img/img_index_k/barcode.png">
+                </div>
+
+                <div class="fo_text" style="width:405px;margin-top:20px;">
+                    <p>12thFloor, Tower E, Global Trade Center, 36#East Rd., North 3rd Ring Rd.,</p>
+                    <p> Dongcheng District, Beijing, 100013, PRC</p>
+                    <p>T/F : 4006182112</p>
+                </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+
+<script src="../r/cms/heju/heju/js/jquery-1.8.3.min.js"></script>
+<script src="../r/cms/heju/heju/js/x_index.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 120px;
+    background: #313235;
+    color: #fff;
+    font-size: 12px;
+}
+.footer_con{
+    width: 960px;
+    margin: 0 auto;
+    height: 120px;
+}
+.fo_left{
+    width: 630px;
+    float: left;
+}
+.fo_left ul{
+    height: 20px;
+    clear: right;
+    padding-top: 35px;
+}
+.fo_left ul li{
+    float: left;
+}
+.fo_left ul li span{
+    margin: 0 15px 0 15px;
+}
+.fo_left p{
+   line-height: 21px;
+}
+.fo_right{
+    width: 320px;
+    float: left;
+    padding-top: 20px;
+
+}
+.fo_img{
+    float: left;
+    width: 90px;
+}
+.fo_text{
+    float: left;
+    width: 230px;
+}
+.fo_text p{
+  line-height: 21px;
+}
+
